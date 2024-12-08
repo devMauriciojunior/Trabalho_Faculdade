@@ -1,0 +1,336 @@
+/* Fonte adicionada externamente */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Variaveis Declaradas */
+:root {
+    --corfundo: #0B2545;
+    --corextra1: #13315C;
+    --corextra2: #134074;
+    --cortexto1: #8DA9C4;
+    --cortexto2: #EEF4ED;
+    --fonte: "Open Sans", serif;
+}
+
+
+/* RESET CSS */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--fonte);
+}
+
+/* HEADER */
+
+.header {
+    padding: 20px;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corfundo);
+}
+
+.header .navbar {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .navbar .links {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.header .navbar .links li a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 7px;
+    border-radius: 10px;
+    transition: 0.35s ease-out;
+    color: var(--cortexto2);
+}
+
+.header .navbar .links li a:hover {
+    background-color: var(--corextra1);
+    font-size: 1.3rem;
+}
+
+/* MAIN */
+/* SECTION BOAS VINDAS */
+
+main .boasvindas {
+    height: 85vh;
+    background-color: var(--corextra2);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .boasvindas h1 {
+    color: var(--cortexto2);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+main .boasvindas p {
+    color: var(--cortexto1);
+    max-width: 60%;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+/* SECTION SOBRE MIM */
+
+main .sobremim {
+    height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corextra1);
+}
+
+main .sobremim h2 {
+    color: var(--cortexto2);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+main .sobremim p {
+    color: var(--cortexto1);
+    max-width: 80%;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+main .sobremim p span {
+    background-color: var(--cortexto2);
+    color: var(--corextra1);
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 1px 4px;
+}
+
+main .sobremim img {
+    max-width: 30%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* SECTION FORMAÇÃO */
+
+main .formacao {
+    min-height: 100vh;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--corextra2);
+}
+
+main .formacao > p {
+    max-width: 1000px;
+    margin-bottom: 50px;
+    color: var(--cortexto2);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+main .formacao .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+main .formacao .container .cards {
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    border: 1px dotted var(--cortexto1);
+    text-align: center;
+}
+
+main .formacao .container .cards h3 {
+    color: var(--cortexto2);
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+main .formacao .container .cards p {
+    color: var(--cortexto1);
+    max-width: 90%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+main .formacao .container .cards img {
+    width: 270px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+/* SECTION PORTIFÓLIO */
+
+main .portifolio {
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--corextra1);
+}
+
+main .portifolio .container .items:first-child {
+    margin-bottom: 50px;
+}
+
+main .portifolio .container .items {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+}
+
+main .portifolio .container .items p {
+    color: var(--cortexto1);
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
+
+main .portifolio .container .items p span {
+    background-color: var(--cortexto2);
+    color: var(--corextra1);
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+main .portifolio .container .items iframe {
+    width: 50vw;
+    height: 70vh;
+    border-radius: 2px;
+}
+
+/* SECTION CONTATO */
+
+main .contato {
+    min-height: 100vh;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--corextra2);
+}
+
+main .contato form {
+    background-color: #0b254581;
+    width: 50vw;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+main .contato form h3 {
+    color: var(--cortexto2);
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+main .contato form .container {
+    width: 100%;
+}
+
+main .contato form .container label {
+    display: block;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--cortexto2);
+}
+
+main .contato form .container input,textarea {
+    width: 100%;
+    padding: 15px 5px;
+    color: var(--cortexto1);
+    resize: none;
+    border: none;
+    border-bottom: 1px solid var(--cortexto2);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+main .contato form .container input::placeholder, textarea::placeholder {
+    color: var(--cortexto1);
+}
+
+main .contato form .container input:focus-visible, textarea:focus-visible {
+    outline: none;
+    border-bottom: 3px solid var(--cortexto2);
+}
+
+main .contato form .btn {
+    display: flex;
+    justify-content: center;
+}
+
+main .contato form .container button {
+    width: 50%;
+    height: 30px;
+    font-size: .9rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer {
+    padding: 20px;
+    height: 15vh;
+    background-color: var(--corfundo);
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 50px;
+}
+
+.footer ul li a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transition: 0.35s ease-out;
+    color: var(--corextra1);
+    background-color: var(--cortexto2);
+}
