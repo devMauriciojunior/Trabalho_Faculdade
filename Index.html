@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link para conectar o css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ------------------------ -->
+    <title>Portifólio Pessoal</title>
+</head>
+<body>
+    <!-- Cabeçalho do Site -->
+    <header class="header">
+        <nav class="navbar">
+            <ul class="links">
+                <!-- Cada link leva para uma sessão do Site -->
+                <li><a href="#sobremim">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação Acadêmica</a></li>
+                <li><a href="#portifolio">Portifólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <!-- -------------------------------------- -->
+            </ul>
+        </nav>
+    </header>
+    <!-- ----------------- -->
+
+    <!-- Parte Principal do Site -->
+    <main>
+        <section class="boasvindas">
+            <h1>Bem-vindo ao Meu Portfólio!</h1>
+            <p>
+                Olá Pessoal! 👋<br>
+                É um prazer receber você aqui. Este é o resultado de um trabalho acadêmico desenvolvido com dedicação e criatividade, utilizando HTML e CSS para construir este portfólio pessoal.
+                Meu objetivo com este projeto é apresentar um pouco mais sobre mim, minhas habilidades e alguns dos projetos que tenho desenvolvido ao longo da minha jornada na programação.
+                Fique à vontade para explorar cada seção, conhecer meus trabalhos e entrar em contato caso tenha interesse em discutir ideias, projetos ou simplesmente trocar experiências! ✨<br>
+                Obrigado por estar aqui!
+            </p>
+        </section>
+
+        <section id="sobremim" class="sobremim">
+            <div class="container">
+                <h2>Eu sou o Mauricio Junior 🙋🏽‍♂️</h2>
+                <p>
+                    Tenho <span>21 anos</span>, atualmente trabalho na empresa de tecnologia <span>TOTVS</span> com Automatização de Processos Robóticos <span>(RPA)</span>, e estou me graduando em <span>Análise e Desenvolvimento de Sistemas</span> na Uninter. Sou apenas um cara tranquilo que gosta de animes, filmes, músicas, cozinhar e com hiperfoco em carros e corridas. 🚗
+                </p>
+            </div>
+            <img src="Img/FotoTotvs.jpeg" alt="Imagem de uma pessoa">
+        </section>
+
+        <section id="formacao" class="formacao">
+            <p>Além de estar cursando ADS, também já realizei varios cursos. Aqui está alguns exemplos de cursos que realizei ao longo de minha vida!</p>
+            <div class="container">
+                <div class="cards">
+                    <img src="Img/[CERTIFICADO] IOS - Desenvolvimento Web.png" alt="Imagem de Certificado">
+                    <h3>IOS - Desenvolvimento Web</h3>
+                    <p>
+                        O Curso de Desenvolvimento Web do Instituto da Oportunidade Social (IOS) capacita jovens e pessoas com deficiência para o mercado de trabalho, oferecendo formação em HTML, CSS, JavaScript e outras tecnologias essenciais para a criação de sites e aplicações web.
+                    </p>
+                </div>
+                <div class="cards">
+                    <img src="Img/[CERTIFICADO] COURSERA - Suporte de TI.png" alt="Imagem de Certificado">
+                    <h3>Coursera - Suporte de TI</h3>
+                    <p>
+                        O programa online projetado para preparar os participantes para funções de nível inicial em suporte de TI. O curso abrange tópicos fundamentais, como solução de problemas, atendimento ao cliente, redes, sistemas operacionais, administração de sistemas e segurança. 
+                    </p>
+                </div>
+                <div class="cards">
+                    <img src="Img/[CERTIFICADO] DIO - Logica de Programação.png" alt="Imagem de Certificado">
+                    <h3>DIO - Lógica de Programação</h3>
+                    <p>
+                        O curso oferece uma formação completa para quem deseja ingressar no mundo da programação, abordando desde conceitos básicos até estruturas avançadas. Os alunos aprendem variáveis, laços de repetição, funções e estruturas de dados, além de desenvolver o pensamento computacional necessário para resolver problemas de forma eficiente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portifolio" class="portifolio">
+            <div class="container">
+                <div class="items">
+                    <p>
+                        <span>Projeto Arqueogeo<br></span>
+                        Este foi um projeto desenvolvido como trabalho final no curso de Desenvolvimento Web no Instituto da Oportunidade Social, onde o intuito era desenvolver um site para uma empresa.
+
+                    </p>
+                    <iframe src="https://devmauriciojunior.github.io/Site--Arqueogeo/" frameborder="0"></iframe>
+                    
+                </div>
+                <div class="items">
+                    <p>
+                        <span>Portifólio Desenhos<br></span>
+                        Este projeto tem o intuito de colocar conhecimentos teóricos em práticas, construíndo um portifólio para uma amiga designer.
+                    </p>
+                    <iframe src="https://devmauriciojunior.github.io/Projetinhos-pessoais/estudos/Portifolio/index.html" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <form method="">
+                <h3>Entre em contato!</h3>
+                <div class="container nome">
+                    <label for="">Nome:</label>
+                    <input type="text" placeholder="Digite seu nome..">
+                </div>
+                <div class="container email">
+                    <label for="">Email</label>
+                    <input type="e-mail" placeholder="Digite seu e-mail..">
+                </div>
+                <div class="container tel">
+                    <label for="">Telefone</label>
+                    <input type="number" placeholder="Digite seu número">
+                </div>
+                <div class="container mensagem">
+                    <label for="">Deixe sua mensagem:</label>
+                    <textarea rows="10" placeholder="Digite sua mensagem.."></textarea>
+                </div>
+                <div class="container btn">
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- ----------------------- -->
+
+    <!-- Footer do Site -->
+    <footer class="footer">
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/devmauriciojunior/" target="_blank">Linkedin</a>
+            </li>
+            <li>
+                <a href="https://github.com/devMauriciojunior" target="_blank">Github</a>
+            </li>
+        </ul>
+    </footer>
+    <!-- -------------- -->
+</body>
+</html>
